@@ -1,47 +1,16 @@
-<testsuites id="" name="" tests="4" failures="1" skipped="0" errors="0" time="75.437963">
-<testsuite name="api.spec.js" timestamp="2026-03-24T21:04:01.536Z" hostname="chromium" tests="3" failures="0" skipped="0" time="2.701" errors="0">
-<testcase name="API: reqres.in User CRUD Flow › POST /api/users → Create user, validate 201 and store userId @API" classname="api.spec.js" time="1.307">
+<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="36.284588">
+<testsuite name="api.spec.js" timestamp="2026-03-24T21:11:38.360Z" hostname="chromium" tests="3" failures="0" skipped="0" time="2.149" errors="0">
+<testcase name="API: reqres.in User CRUD Flow › POST /api/users → Create user, validate 201 and store userId @API" classname="api.spec.js" time="0.912">
 </testcase>
-<testcase name="API: reqres.in User CRUD Flow › GET /api/users/{id} → Fetch created user and validate details @API" classname="api.spec.js" time="0.958">
+<testcase name="API: reqres.in User CRUD Flow › GET /api/users/{id} → Fetch created user and validate details @API" classname="api.spec.js" time="0.801">
 </testcase>
 <testcase name="API: reqres.in User CRUD Flow › PUT /api/users/{id} → Update user name and validate @API" classname="api.spec.js" time="0.436">
 </testcase>
 </testsuite>
-<testsuite name="ui.spec.js" timestamp="2026-03-24T21:04:01.536Z" hostname="chromium" tests="1" failures="1" skipped="0" time="60.923" errors="0">
-<testcase name="UI: DemoQA Book Store Flow › Full book store flow: login → search → log book → logout @UI" classname="ui.spec.js" time="60.923">
-<failure message="ui.spec.js:12:3 Full book store flow: login → search → log book → logout @UI" type="FAILURE">
-<![CDATA[  [chromium] › ui.spec.js:12:3 › UI: DemoQA Book Store Flow › Full book store flow: login → search → log book → logout @UI › Step 8: Click on log out 
-
-    Test timeout of 60000ms exceeded.
-
-    Error: page.waitForLoadState: Test timeout of 60000ms exceeded.
-
-       at ..\pages\LoginPage.js:22
-
-      20 |   async goto() {
-      21 |     await this.navigate('/login');
-    > 22 |     await this.page.waitForLoadState('networkidle');
-         |                     ^
-      23 |   }
-      24 |
-      25 |   async login(username, password) {
-        at LoginPage.goto (C:\Users\user\OneDrive - Momentus Technologies\Documents\playwright-automation\pages\LoginPage.js:22:21)
-        at C:\Users\user\OneDrive - Momentus Technologies\Documents\playwright-automation\tests\ui.spec.js:51:7
-        at C:\Users\user\OneDrive - Momentus Technologies\Documents\playwright-automation\tests\ui.spec.js:49:5
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\ui-UI-DemoQA-Book-Store-Fl-7308b-arch-→-log-book-→-logout-UI-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\test-results\ui-UI-DemoQA-Book-Store-Fl-7308b-arch-→-log-book-→-logout-UI-chromium\error-context.md
-]]>
-</failure>
+<testsuite name="ui.spec.js" timestamp="2026-03-24T21:11:38.360Z" hostname="chromium" tests="1" failures="0" skipped="0" time="22.761" errors="0">
+<testcase name="UI: DemoQA Book Store Flow › Full book store flow: login → search → log book → logout @UI" classname="ui.spec.js" time="22.761">
 <system-out>
 <![CDATA[Results written to C:\Users\user\OneDrive - Momentus Technologies\Documents\playwright-automation\results\results.txt
-
-[[ATTACHMENT|..\..\test-results\ui-UI-DemoQA-Book-Store-Fl-7308b-arch-→-log-book-→-logout-UI-chromium\test-failed-1.png]]
-
-[[ATTACHMENT|..\..\test-results\ui-UI-DemoQA-Book-Store-Fl-7308b-arch-→-log-book-→-logout-UI-chromium\error-context.md]]
 ]]>
 </system-out>
 </testcase>

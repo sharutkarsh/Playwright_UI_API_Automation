@@ -48,7 +48,6 @@ test.describe('UI: DemoQA Book Store Flow', () => {
 
     await test.step('Step 8: Click on log out', async () => {
       await page.goBack();
-      await loginPage.goto();
       await loginPage.logout();
     });
   });

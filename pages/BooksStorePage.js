@@ -21,12 +21,12 @@ class BooksStorePage extends BasePage {
 
   async goto() {
     await this.navigate('/books');
-    await this.page.waitForLoadState('networkidle');
+    await this.page.waitForLoadState('domcontentloaded');
   }
 
   async gotoViaButton() {
     await this.navigate('/');
-    await this.page.waitForLoadState('networkidle');
+    await this.page.waitForLoadState('domcontentloaded');
     await this.click(this.bookStoreButton);
     await this.page.waitForURL('**/books', { timeout: 10000 });
   }
@@ -38,7 +38,7 @@ class BooksStorePage extends BasePage {
 
   async getBookDetails(title) {
     await this.click(this.bookTitleLink(title));
-    await this.page.waitForLoadState('networkidle');
+    await this.page.waitForLoadState('domcontentloaded');
 
     const bookTitle  = await this.getText(this.bookTitleValue);
     const author     = await this.getText(this.authorValue);

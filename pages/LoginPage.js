@@ -19,7 +19,7 @@ class LoginPage extends BasePage {
 
   async goto() {
     await this.navigate('/login');
-    await this.page.waitForLoadState('networkidle');
+    await this.page.waitForLoadState('domcontentloaded');
   }
 
   async login(username, password) {

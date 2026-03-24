@@ -1,4 +1,4 @@
 Title: Learning JavaScript Design Patterns
 Author: Addy Osmani
 Publisher: O'Reilly Media
-Timestamp: 2026-03-24T21:04:33.830Z
+Timestamp: 2026-03-24T21:12:10.357Z

@@ -10,9 +10,10 @@ Production-grade hybrid UI + API automation framework built with [Playwright](ht
 |---|---|
 | [Playwright](https://playwright.dev) | Browser automation & API testing |
 | JavaScript (CommonJS) | Test authoring |
-| Node.js | Runtime |
-| reqres.in | Mock API backend for CRUD tests |
+| Node.js 20 | Runtime |
+| reqres.in | Custom collection API backend for CRUD tests |
 | demoqa.com | UI test application |
+| GitHub Actions | CI/CD pipeline |
 
 ---
 
@@ -20,6 +21,9 @@ Production-grade hybrid UI + API automation framework built with [Playwright](ht
 
 ```
 playwright-automation/
+├── .github/
+│   └── workflows/
+│       └── playwright.yml   # GitHub Actions CI/CD pipeline
 ├── config/
 │   └── testData.js          # Centralized test data (credentials, API keys, URLs)
 ├── fixtures/
@@ -92,10 +96,10 @@ class ExamplePage extends BasePage {
 
 ```bash
 # Install dependencies
-npm install
+npm ci
 
 # Install Playwright browsers
-npx playwright install chromium
+npx playwright install chromium --with-deps
 ```
 
 ---
@@ -186,7 +190,32 @@ npm run report
 
 ---
 
+## CI/CD — GitHub Actions
+
+The pipeline triggers on every push and pull request to `main`/`master`.
+
+### Pipeline Steps
+
+| Step | Action |
+|---|---|
+| 1 | Checkout code |
+| 2 | Setup Node.js 20 |
+| 3 | Install dependencies via `npm ci` |
+| 4 | Install Chromium with system dependencies (`--with-deps`) |
+| 5 | Run all tests via `npm test` |
+| 6 | Upload HTML report as artifact (retained 14 days) |
+| 7 | Upload test results and traces as artifact (retained 14 days) |
+
+### GitHub Secrets Setup
+
+Add the following secret to your repository under `Settings → Secrets and variables → Actions`:
+
+| Secret | Value |
+|---|---|
+| `REQRES_API_KEY` | Your reqres.in pro API key |
+
+---
+
 ## Author
 
 **Utkarsh Sharma**
-# Playwright_UI_API_Automation

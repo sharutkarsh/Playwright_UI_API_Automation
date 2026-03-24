@@ -176,16 +176,21 @@ const testData = {
 
 | Report type | Location | When generated |
 |---|---|---|
-| HTML report | `playwright-report/index.html` | Every run |
-| JUnit XML | `test-results/results.xml` | Every run |
+| HTML report | `reports/html/index.html` | Every run |
+| JUnit XML | `reports/junit/results.xml` | Every run |
+| Allure results | `reports/allure-results/` | Every run |
+| Allure HTML | `reports/allure-report/` | After `npm run report:allure` |
 | Book details | `results/results.txt` | Every UI run (cleared before run) |
-| Screenshots | `test-results/` | On failure only |
-| Video | `test-results/` | On first retry |
-| Trace | `test-results/` | On first retry |
+| Screenshots | `reports/html/` | On failure only |
+| Video | `reports/html/` | On first retry |
+| Trace | `reports/html/` | On first retry |
 
 ```bash
-# Open HTML report
+# Open Playwright HTML report
 npm run report
+
+# Generate and open Allure report
+npm run report:allure
 ```
 
 ---

@@ -7,8 +7,9 @@ module.exports = defineConfig({
   retries: 0,
   workers: 1,
   reporter: [
-    ['html', { outputFolder: 'playwright-report', open: 'never' }],
-    ['junit', { outputFile: 'test-results/results.xml' }],
+    ['html', { outputFolder: 'reports/html', open: 'never' }],
+    ['junit', { outputFile: 'reports/junit/results.xml' }],
+    ['allure-playwright', { outputFolder: 'reports/allure-results' }],
   ],
   use: {
     baseURL: 'https://demoqa.com',

@@ -1,0 +1,18 @@
+<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="53.585241">
+<testsuite name="api.spec.js" timestamp="2026-03-24T20:16:25.584Z" hostname="chromium" tests="3" failures="0" skipped="0" time="2.468" errors="0">
+<testcase name="API: reqres.in User CRUD Flow › POST /api/users → Create user, validate 201 and store userId @API" classname="api.spec.js" time="1.248">
+</testcase>
+<testcase name="API: reqres.in User CRUD Flow › GET /api/users/{id} → Fetch created user and validate details @API" classname="api.spec.js" time="0.773">
+</testcase>
+<testcase name="API: reqres.in User CRUD Flow › PUT /api/users/{id} → Update user name and validate @API" classname="api.spec.js" time="0.447">
+</testcase>
+</testsuite>
+<testsuite name="ui.spec.js" timestamp="2026-03-24T20:16:25.584Z" hostname="chromium" tests="1" failures="0" skipped="0" time="41.651" errors="0">
+<testcase name="UI: DemoQA Book Store Flow › Full book store flow: login → search → log book → logout @UI" classname="ui.spec.js" time="41.651">
+<system-out>
+<![CDATA[Results written to C:\Users\user\OneDrive - Momentus Technologies\Documents\playwright-automation\results\results.txt
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

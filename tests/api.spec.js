@@ -6,6 +6,8 @@ const { testData } = require('../config/testData');
 
 const { newUser, updatedUser, expectedStatus } = testData.api;
 
+test.describe.configure({mode: 'serial'}); // Ensure tests run in order since they depend on each other
+
 test.describe('API: reqres.in User CRUD Flow', () => {
 
   test('POST /api/users → Create user, validate 201 and store userId @API', async ({ apiClient }) => {

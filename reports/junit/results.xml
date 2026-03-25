@@ -1,14 +1,30 @@
-<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="36.284588">
-<testsuite name="api.spec.js" timestamp="2026-03-24T21:11:38.360Z" hostname="chromium" tests="3" failures="0" skipped="0" time="2.149" errors="0">
-<testcase name="API: reqres.in User CRUD Flow › POST /api/users → Create user, validate 201 and store userId @API" classname="api.spec.js" time="0.912">
-</testcase>
-<testcase name="API: reqres.in User CRUD Flow › GET /api/users/{id} → Fetch created user and validate details @API" classname="api.spec.js" time="0.801">
-</testcase>
-<testcase name="API: reqres.in User CRUD Flow › PUT /api/users/{id} → Update user name and validate @API" classname="api.spec.js" time="0.436">
+<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="116.228196">
+<testsuite name="ui.spec.js" timestamp="2026-03-25T05:25:11.201Z" hostname="chromium" tests="1" failures="0" skipped="0" time="43.093" errors="0">
+<testcase name="UI: DemoQA Book Store Flow › Full book store flow: login → search → log book → logout @UI" classname="ui.spec.js" time="43.093">
+<system-out>
+<![CDATA[Results written to C:\Users\user\OneDrive - Momentus Technologies\Documents\playwright-automation\results\results.txt
+]]>
+</system-out>
 </testcase>
 </testsuite>
-<testsuite name="ui.spec.js" timestamp="2026-03-24T21:11:38.360Z" hostname="chromium" tests="1" failures="0" skipped="0" time="22.761" errors="0">
-<testcase name="UI: DemoQA Book Store Flow › Full book store flow: login → search → log book → logout @UI" classname="ui.spec.js" time="22.761">
+<testsuite name="ui.spec.js" timestamp="2026-03-25T05:25:11.201Z" hostname="firefox" tests="1" failures="0" skipped="0" time="71.194" errors="0">
+<testcase name="UI: DemoQA Book Store Flow › Full book store flow: login → search → log book → logout @UI" classname="ui.spec.js" time="71.194">
+<system-out>
+<![CDATA[Results written to C:\Users\user\OneDrive - Momentus Technologies\Documents\playwright-automation\results\results.txt
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui.spec.js" timestamp="2026-03-25T05:25:11.201Z" hostname="edge" tests="1" failures="0" skipped="0" time="35.716" errors="0">
+<testcase name="UI: DemoQA Book Store Flow › Full book store flow: login → search → log book → logout @UI" classname="ui.spec.js" time="35.716">
+<system-out>
+<![CDATA[Results written to C:\Users\user\OneDrive - Momentus Technologies\Documents\playwright-automation\results\results.txt
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui.spec.js" timestamp="2026-03-25T05:25:11.201Z" hostname="webkit" tests="1" failures="0" skipped="0" time="35.655" errors="0">
+<testcase name="UI: DemoQA Book Store Flow › Full book store flow: login → search → log book → logout @UI" classname="ui.spec.js" time="35.655">
 <system-out>
 <![CDATA[Results written to C:\Users\user\OneDrive - Momentus Technologies\Documents\playwright-automation\results\results.txt
 ]]>

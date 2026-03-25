@@ -199,17 +199,31 @@ npm run report:allure
 
 The pipeline triggers on every push and pull request to `main`/`master`.
 
-### Pipeline Steps
+Tests run **in parallel across 4 browsers** — each on its own cloud machine simultaneously.
+
+### Matrix Strategy
+
+| Machine | Browser |
+|---|---|
+| ubuntu-latest #1 | Chromium |
+| ubuntu-latest #2 | Firefox |
+| ubuntu-latest #3 | WebKit |
+| ubuntu-latest #4 | Edge |
+
+### Pipeline Steps (per machine)
 
 | Step | Action |
 |---|---|
 | 1 | Checkout code |
 | 2 | Setup Node.js 20 |
 | 3 | Install dependencies via `npm ci` |
-| 4 | Install Chromium with system dependencies (`--with-deps`) |
-| 5 | Run all tests via `npm test` |
+| 4 | Install only the required browser with `--with-deps` |
+| 5 | Run tests for that browser via `--project=<browser>` |
 | 6 | Upload HTML report as artifact (retained 14 days) |
 | 7 | Upload test results and traces as artifact (retained 14 days) |
+| 8 | Upload Allure results as artifact (retained 14 days) |
+
+`fail-fast: false` ensures all 4 browsers complete even if one fails.
 
 ### GitHub Secrets Setup
 

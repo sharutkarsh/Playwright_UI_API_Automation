@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1368","POST /api/users → Create user, validate 201 and store userId @API","chromium","2026-03-25","passed","2026-03-25","API: reqres.in User CRUD Flow","api.spec.js","",""
+"","822","GET /api/users/{id} → Fetch created user and validate details @API","chromium","2026-03-25","passed","2026-03-25","API: reqres.in User CRUD Flow","api.spec.js","",""
+"","399","PUT /api/users/{id} → Update user name and validate @API","chromium","2026-03-25","passed","2026-03-25","API: reqres.in User CRUD Flow","api.spec.js","",""

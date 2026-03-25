@@ -13,7 +13,19 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        browser: [chromium, firefox, webkit, edge]
+        include:
+          - browser: chromium
+            project: chromium
+            install: chromium
+          - browser: firefox
+            project: firefox
+            install: firefox
+          - browser: webkit
+            project: webkit
+            install: webkit
+          - browser: edge
+            project: edge
+            install: msedge
 
     steps:
       - name: Checkout code
@@ -28,10 +40,16 @@ jobs:
         run: npm ci
 
       - name: Install Playwright browsers
-        run: npx playwright install ${{ matrix.browser }} --with-deps
+        run: npx playwright install ${{ matrix.install }} --with-deps
 
-      - name: Run Playwright tests on ${{ matrix.browser }}
-        run: npx playwright test --project=${{ matrix.browser }}
+      - name: Run UI tests on ${{ matrix.browser }}
+        run: npx playwright test --project=${{ matrix.project }}
+        env:
+          REQRES_API_KEY: ${{ secrets.REQRES_API_KEY }}
+
+      - name: Run API tests (chromium only)
+        if: matrix.browser == 'chromium'
+        run: npx playwright test --project=api
         env:
           REQRES_API_KEY: ${{ secrets.REQRES_API_KEY }}
 

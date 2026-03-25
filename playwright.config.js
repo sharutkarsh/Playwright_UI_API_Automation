@@ -5,7 +5,7 @@ module.exports = defineConfig({
   testDir: './tests',
   timeout: 90000,
   retries: 1,
-  workers: 5,
+  workers: 1,
   reporter: [
     ['html', { outputFolder: 'reports/html', open: 'never' }],
     ['junit', { outputFile: 'reports/junit/results.xml' }],
@@ -19,21 +19,32 @@ module.exports = defineConfig({
     video: 'on-first-retry',
   },
   projects: [
+    // API tests — run once on chromium only, no browser needed
+    {
+      name: 'api',
+      testMatch: '**/api.spec.js',
+      use: { ...devices['Desktop Chrome'] },
+    },
+    // UI tests — run on all 4 browsers
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'], headless: true },
+      testMatch: '**/ui.spec.js',
+      use: { ...devices['Desktop Chrome'] },
     },
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'], headless: true },
-    },
-    {
-      name: 'edge',
-      use: { ...devices['Desktop Edge'], headless: true },
+      testMatch: '**/ui.spec.js',
+      use: { ...devices['Desktop Firefox'] },
     },
     {
       name: 'webkit',
-      use: { ...devices['Desktop WebKit'], headless: true },
-    }
+      testMatch: '**/ui.spec.js',
+      use: { ...devices['Desktop WebKit'] },
+    },
+    {
+      name: 'edge',
+      testMatch: '**/ui.spec.js',
+      use: { ...devices['Desktop Edge'] },
+    },
   ],
 });

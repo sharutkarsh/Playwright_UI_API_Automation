@@ -44,7 +44,7 @@ module.exports = defineConfig({
     {
       name: 'edge',
       testMatch: '**/ui.spec.js',
-      use: { ...devices['Desktop Edge'] },
+      use: { ...devices['Desktop Chrome'] },
     },
   ],
 });

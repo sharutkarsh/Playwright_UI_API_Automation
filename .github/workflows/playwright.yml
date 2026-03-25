@@ -25,7 +25,7 @@ jobs:
             install: webkit
           - browser: edge
             project: edge
-            install: msedge
+            install: chromium
 
     steps:
       - name: Checkout code
@@ -40,7 +40,7 @@ jobs:
         run: npm ci
 
       - name: Install Playwright browsers
-        run: npx playwright install ${{ matrix.install }} --with-deps
+        run: npx playwright install ${{ matrix.install }} chromium --with-deps
 
       - name: Run UI tests on ${{ matrix.browser }}
         run: npx playwright test --project=${{ matrix.project }}

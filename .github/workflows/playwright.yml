@@ -63,7 +63,7 @@ jobs:
 
       - name: Upload test results (${{ matrix.browser }})
         uses: actions/upload-artifact@v4
-        if: always()
+        if: failure()
         with:
           name: test-results-${{ matrix.browser }}
           path: test-results/

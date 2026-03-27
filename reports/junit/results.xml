@@ -1,0 +1,29 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="20.032079">
+<testsuite name="ui\ui.spec.js" timestamp="2026-03-27T09:39:28.527Z" hostname="chromium" tests="1" failures="1" skipped="0" time="14.035" errors="0">
+<testcase name="UI: DemoQA Book Store Flow › Full book store flow: login → search → log book → logout @UI" classname="ui\ui.spec.js" time="14.035">
+<failure message="ui.spec.js:11:3 Full book store flow: login → search → log book → logout @UI" type="FAILURE">
+<![CDATA[  [chromium] › ui\ui.spec.js:11:3 › UI: DemoQA Book Store Flow › Full book store flow: login → search → log book → logout @UI › Login as "usharma759@gmail.com" 
+
+    Error: page.waitForURL: Target page, context or browser has been closed
+    =========================== logs ===========================
+    waiting for navigation to "**/profile" until "load"
+      navigated to "https://app.smartlead.ai/login"
+    ============================================================
+
+       at ..\pages\LoginPage.js:30
+
+      28 |     await this.click(this.loginButton);
+      29 |     // waitForURL alone is flaky on WebKit — userNameLabel visibility confirms login is fully settled
+    > 30 |     await this.page.waitForURL('**/profile', { timeout: 60000 });
+         |                     ^
+      31 |     await expect(this.userNameLabel).toBeVisible({ timeout: 60000 });
+      32 |   }
+      33 |
+        at LoginPage.login (D:\Demo Project\Playwright_UI_API_Automation-master\Playwright_UI_API_Automation-master\pages\LoginPage.js:30:21)
+        at D:\Demo Project\Playwright_UI_API_Automation-master\Playwright_UI_API_Automation-master\tests\ui\ui.spec.js:18:7
+        at D:\Demo Project\Playwright_UI_API_Automation-master\Playwright_UI_API_Automation-master\tests\ui\ui.spec.js:17:5
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>

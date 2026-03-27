@@ -1,0 +1,120 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link [ref=e4] [cursor=pointer]:
+      - /url: https://demoqa.com
+      - img [ref=e5]
+  - generic [ref=e8]:
+    - generic [ref=e11]:
+      - generic [ref=e14] [cursor=pointer]:
+        - generic [ref=e15]:
+          - img [ref=e17]
+          - text: Elements
+        - img [ref=e22]
+      - generic [ref=e26] [cursor=pointer]:
+        - generic [ref=e27]:
+          - img [ref=e29]
+          - text: Forms
+        - img [ref=e35]
+      - generic [ref=e39] [cursor=pointer]:
+        - generic [ref=e40]:
+          - img [ref=e42]
+          - text: Alerts, Frame & Windows
+        - img [ref=e47]
+      - generic [ref=e51] [cursor=pointer]:
+        - generic [ref=e52]:
+          - img [ref=e54]
+          - text: Widgets
+        - img [ref=e60]
+      - generic [ref=e64] [cursor=pointer]:
+        - generic [ref=e65]:
+          - img [ref=e67]
+          - text: Interactions
+        - img [ref=e72]
+      - generic [ref=e74]:
+        - generic [ref=e76] [cursor=pointer]:
+          - generic [ref=e77]:
+            - img [ref=e79]
+            - text: Book Store Application
+          - img [ref=e84]
+        - list [ref=e87]:
+          - listitem [ref=e88] [cursor=pointer]:
+            - link "Login" [ref=e89]:
+              - /url: /login
+              - img [ref=e90]
+              - text: Login
+          - listitem [ref=e92] [cursor=pointer]:
+            - link "Book Store" [ref=e93]:
+              - /url: /books
+              - img [ref=e94]
+              - text: Book Store
+          - listitem [ref=e96] [cursor=pointer]:
+            - link "Profile" [ref=e97]:
+              - /url: /profile
+              - img [ref=e98]
+              - text: Profile
+          - listitem [ref=e100] [cursor=pointer]:
+            - link "Book Store API" [ref=e101]:
+              - /url: /swagger
+              - img [ref=e102]
+              - text: Book Store API
+    - generic [ref=e105]:
+      - generic [ref=e106]:
+        - generic [ref=e108]: "Books :"
+        - generic [ref=e109]:
+          - generic [ref=e110]: "User Name :"
+          - generic [ref=e111]: testuser_qa01
+          - button "Logout" [ref=e112] [cursor=pointer]
+        - generic [ref=e114]:
+          - textbox "Type to search" [ref=e115]
+          - button [ref=e116] [cursor=pointer]:
+            - img [ref=e117]
+      - generic [ref=e119]:
+        - table [ref=e120]:
+          - rowgroup [ref=e121]:
+            - row "Image Title Author Publisher Action" [ref=e122]:
+              - columnheader "Image" [ref=e123]:
+                - generic [ref=e124]: Image
+              - columnheader "Title" [ref=e125] [cursor=pointer]:
+                - generic [ref=e126]: Title
+              - columnheader "Author" [ref=e127] [cursor=pointer]:
+                - generic [ref=e128]: Author
+              - columnheader "Publisher" [ref=e129] [cursor=pointer]:
+                - generic [ref=e130]: Publisher
+              - columnheader "Action" [ref=e131]:
+                - generic [ref=e132]: Action
+          - rowgroup
+        - generic [ref=e134]:
+          - button "Previous" [disabled]
+          - generic [ref=e135]: Page 1 of 0
+          - button "Next" [disabled]
+      - generic [ref=e136]:
+        - button "Go To Book Store" [ref=e138] [cursor=pointer]
+        - button "Delete Account" [ref=e140] [cursor=pointer]
+        - button "Delete All Books" [ref=e142] [cursor=pointer]
+    - generic [ref=e148]:
+      - iframe [ref=e151]:
+        - generic [ref=f7e2]:
+          - link "Advertisement" [ref=f7e4] [cursor=pointer]:
+            - /url: https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssJDVc-0ayHr8vuZkdVweXL0lwTbmQFB7BSgMNEB1z0c0qnLsuD8HXh4hCMHMPp38EVOMOMAwcfQJ-RAGCD33F2CRTyzOpxt5SxkWKwMOXrvTrmxL0kaBc7eN6pLRzmScBoia1WFXyaWNdn-xYPhJVIE9trgE1tIMfxpIHtG77RMXlfnoGgAwFMkAss0N3wVwHdMoCA2BiD54DBmZjzUH7T-almipKvTG1D2m8rsXwyxrRbtuiT1FhtUrzmkfF_OmncdE28YLK054pMVjlc2cGNuKrf9XIZYrfZfZ0M-nPefrzdYmYEgVszc14rqfranPZRRQFBHrVfv3oLNjrE0EcMqKsGaxZU5FYV9IvBqp0OvDuczqJc4yp6zxlnsGzsdX2n8sw2scu-XMg4UduITbEKrKao9R97cN3squGlqKqYiYPIK40ff_NLMMV0xh4VmtIAmWOBisX8qyQ_mYjXWvLPl9Zn6XR3v6mzUSN0HsF_c61frCyrmYfESxRksX8hBY1NQIhJkuS7iahdoCxZtBMD3uyGxtqMtVZR5brRRMUOf5ARXD8eMjEc0ntLRX2zv2YtFmi8HDmnXmnUUlV_1dnZFcN26bhuUZfdUakbwC3wvUGhEK-1hoQgJa0VstNVcgej9_NW02e1zOPFmctHZgt4p-JHAgAOnHUF71FS1Pg4UMxfrJWoxmSS2lVwV2kuFHZgMvDw8PaXpdMWyB_2xhP2oeeH54YMsP-JkWUWn0uFrVgOYFSpuEzlyKJoHA4L92gmcGFJEMNDdWdUdSzKjaq2NB25fyY9gIhgRVcggR5ZiI8yIK7OuTJi470Gv26tm4xVReXFXoDovmDKvzxJ48kp8aHt-evruVJDUUEtRIu0qujetkIM7TFGLt3Dn1g_COtlSKX5EjijCiHo0jijw46Liz0DEF9CFgw-W-SOh5L_LMU9eWjAtK21ti5tJbono1Ke16bgpLYwDThpHEDMnk0HYQLQrpwiuKue7ZCniGifWdRczE5hI8rWghDkXJoZ2zRyXUQTjPe778SPZR_H-zRWQmceCZU9kEhJKfl8SxsDZ6wn-LC1YoGSbVbI42toj1qk7hIi_Kzgr_8UfAX-QOO7-7UNeyEfmXHUUAPnBl3EDHHS6JA8Ga9esZ-LP8hJBwybWv7wRAw-2MLmigE51nCR2OhN0LkWbAI_uv-rCtOLINIQMCZXIMEnWkOV0Mb_vb5vVZiuvf2yhLsjbsM_4EnT0NfV1UjXAXRYs7FwC4bZZ7Fb-z7WrQVYWd81cLSBeemOCpZtpOlCw68a7xnHXpwNJh8bOMJ8wjFq-u0xZjF2pNWLWbTWNBp5F2waHKhBkbSIH7Vi9KmkM1e3cs7bxEHAl2SbHar4alOAqNm4mj8827gj8RVVAXKBFdNWYL_QgFOzP82xJcUmgA3JbSM914uxCDBub7Imxc_o7F0XxnmNRS_W4tan--YyW40aVGAdz0Kvvu64KRk2H5wcMSMDUuD-y3rcMSSr790uoohAzX_NhGEQxOjfI6Q1ZCMxRQv4vMPXDgZODiHO7-GM0OzAuFUYoTwBGTHXqCxil6rBghkiQ-y3Vr0WDQ4x-n1z-RCFAmerdaUtMlR2zaRstdW3KtX5A6Li_gWYGVId4BMp8scS893Nh0bU2mwwu_HDwDSAXN7DwR3RDG3Ey34DRwTfd6zAe-hMtmWll7xmnwtwjuF-AxJO5lm2z3AoYYJDpghLxoUt2rVD_TYavJ7iiXRAqwOBGR_aGi9qs63aoZYhgZ1gqpNo0ycjXgfQET38aqba2q4Ke4f3CKTZF2JdrG_SpwJEBsDxWUESngxJhjDfbbbg_3xqRz5dKoqRP2e6byl3KRcj0Tz0SDYPLKyoioZlheZewW-x9C4c_xbwmqzdv037yHN5190ZzpIvCjINI4ZDfO4WZ_Yj5JymkKYsJRmGZpwwo0eXlb5rO_iJbCAXfogYIe6yK2iSHZ8udFPyPK3mz7qMoA&sai=AMfl-YRFiLUAXOPzZJBc5tB45CZVNapqB7v83tMQ9Hr5Ltu0RB7-L3y9Ij9uxzIYC5Sn6PWhqL_UOr2PFCidUfB1G3zD00DZLwzowws9FnXLi6On5dWDI9ZFXIDqapCkDSl60xPGZWaxYCT2eMU4MeXUqDhOkHshHk4YDWuFk3TPgvIqIaxG9YTrQp6wMoLMK24hh4Eav-4AqF79oalu5ewEUYf-9LBedaJmPJDhxISs5PKw4n9GCr7tymdyqJMt7sWF2oj3HN8Hr-h92_iprMiK7Th1sz40x3XJEWVkGR9X5j3BZrl9iLTxHFGmnekeeLlbu7iIU9SIwOf-iGVrUnypM0rFgOf1nBojXI5uDxK-qWEtU26Z2RgvumdmhFvxlPubdLNef0Eif_9fZumCwk1BMmSLKMrYXD5aDX51EvAWFLk6XZbb871kNq8CiRzcyMHVu5Um5vOnI3G-M66_XpcudRDOGEvvnEwnxRYEqVxcC7FmO3UWZmtMASa5NiCWscvZXRKJ-qZevZ5bQHkE91Fr7j_LpTaCtlr4A6CYWRsNB0iOgaMlitoh_p03RSdqPfTQWd-07wicfwpgIxlf8hc4lmymwX-4NywItBCyJ2p2OGtwGp_xK4Z2_lbIGpDJob6d4jEdHybRE44qslCXkJl9UzQM2QUkkcGycV2Ejvy3J5kPazKsQmXX5BdJUVjg3afRbXnm6J25CX3oK5ms9QeDg25gXkULtugBunGUHDnL8ixINW2pihAFjvfxtlIScWJDuKsNw5d13CKdWofUq0421wnvK4Lqu_iXv1P5oIKnbIM&sig=Cg0ArKJSzBA14Qxkpwjc&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://bioderma.naosindia.in/products/sensibio-h2o%3Futm_source%3Ddv360%26utm_medium%3Dpaid%26utm_campaign%3Din_bio_dv360_all_always-on_sensibio_na_awareness_sensibio-h2op1-display%26utm_content%3Dnative_local_sensibio-h2o_inmarket-custom-intent%26dclid%3D%25edclid!%26gad_source%3D7%26gad_campaignid%3D23610931343
+            - img "Advertisement" [ref=f7e5]
+          - generic [ref=f7e6]:
+            - generic:
+              - img [ref=f7e10] [cursor=pointer]
+              - button [ref=f7e12] [cursor=pointer]:
+                - img [ref=f7e13]
+      - iframe [ref=e154]:
+        - generic [ref=f5e2]:
+          - link "Advertisement" [ref=f5e4] [cursor=pointer]:
+            - /url: https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssyi120qe0b6Our6EqLbqdhw8CsOKKGc6w2_QUJCfW-d-evIj-a0J5SOgUBJEp9b2jLy1mYnw1mEOm9_EUQjRMT4MfbYFkY8sSJy7hthou4FWs7rqDX05tZMljGHwEZ2V7DKSzvuN7KihKHrpfW69s0vh0Tq9HfypAEhIZwtsTik8bpsBVSuKMQwoNzZoqWqA0KFtnKmmmORrkCLebKrsyJyZ9kEa1LEAXLQ6dtydbRsf8fCA46TEgVGIrUC8IbO6Oo1tKkdNftNBwK5eeabXHx2x3dsiERV4MVnG3DpC1ikDXyDiW4OJ6EUnJNwdDTlYW1-WxgUUZZic4KQ5tRzu2wUibkNpizjRl7jqVReVOQbFea1BucgcyGUgjaxy9K54_ZO8J1z4bBxqCPlELfP6dTrSzTKS-4cD8Xjp3PeXUk-MNkuKkTXPHsiMNTmgK5X7j2oaz__lbQ92UVz7h8F9314M3ffpqzLcJTJScIfbOnEpb13vZO3H6fuW6qlHgbOi00nx257PGVFp_DK_IvdqQuwinnst3B6fIy6FEnrQw4ntcIznev4PxKsf2iizlQfIn633iw4YnDiELh7_6wHRB4U5Gk-7aalWAPjtMjgFls9FD7xdlJ1MnplgfRIhlouQXC6sw5b5DSDH1aNvwLnmNttEMCsxtgRL4pVH57WNGRdLRs-byLWFbc9cIvyvCMS1OqjU7N1uuBB42UK8jXHBSDC0Uqf5PQ2KnnowgP7cMfVANJWM0h5NBTGNg7Ry85cL0ZLcIpKsBi2IcphDQKZ6VLi5n2vJfHLz3T5RF3CtDAmBNkI9V0d5eEprD4AowoS4H1OgEdaue_19t4fzsiDcaQ-1toqR9clHztSrlZv_f3vGy4pxaQNoNEvGcQbjEjI80evOA1hjrStEhSnV1BPBBj2mITFqqZZzpXyRWiMM0YVLNSh0SIKt8dgtExDna7U4zGMGYCRHnucyGnjn4A3GMVylxD4v6lCxgoSJvckcwfYaBz0MbPyOO5LBSz6ahkXjCPTg96blw5ov7NRW-tYRt7q00lUr8sBGc4UOLzamn7Yjcc1Hp4kQ1NlYXUcZsQ6zcqcmyGfa5uwYxsfn64dXmQ9DNqVcHigv5ZtJdbNURARnwBarl_-gmXATfG2s3JMZKtbC8H7lkyIvx12dbc35DrHD7HJT64OyEvsmvXw3ZTh2EKyful5I-7LJKjP8YTOT116bvvquSs5ZzWWyqITjzy3aROLDnlQQyZrDg4Cx9QzXgBCAOL3qHoXRtSdagu3UPGlPumxSQx111zfpZvuUORPmyJZoT765CxN7hvJG3Z9ZZMVofpvPsV3uFyfsn--WCoHjAOHETma5eP8SFXXqYWzl29_-1bBXHaa9XjdG3OngBt72REUEADrNl3MJP_1Ev7sZBuRLhQ76jwDL0Wg3Coe0u0C6vuOi_we6d9Hg82tsPRD7xFp55YZf3H-cMci78K8Zt_FVOIC9iSOaoqJoeAt14gTeWXx4xe2lSNAI3JUnJMuPoFiteOkncV2RvjKG_PdfgnKmKiZa-9tTlH-M4wZIaOY65lDzsw-4orcPHyYCPqpLcBPoe5B0SQh2t-dj1oF4UH4scu-aUmKcnBkieg6yEXyrVzbHZIoubiWFunauf9Fbc1zJ2A9-S26gBHiyUKs1zlKaQOuE-teCOs5MDQwv4EVeE-W23C3BmlkweZ8vMA2tfzTQKLDPFPeoxFLf3HqcPbLZlQrpErbv0qwv1uMqJvNBguag88NfUN15mJ80LhIvz6YFlqcQKNCqkzhHzVTVPw13wuHYuhILp5Vkmkq1gW5ByP8tDom1LZn7DSn6kM5oEBhib0gTv7eRLU7oAeHw6UZErNXEdTSRxkX4DdV3IIai5EOdahqvT0c74VJKgnn3Od1O2DSrGG-AatYFQ8DM9Lj7bAuCsEVOruCSPZnO-I70LkIbium1-XcTIl1zI7lOHaSko&sai=AMfl-YRWMaD4yW_uHzhK97f_GoeVxOWjjjWjtdpxCoEQDleITTDk2_w7fwq0pNCoL3JcdjLfcGSVEHLUJGlVx2DCy0zs4hor98M3aJitRx5MUzQ9iFcbDE3GD6cl_Paq9q3hQoRgcFwx0R8F0RS3U9jyLyk_Um9bgU0RI6dPHnTGKuuKUOhaXB1BnOgu_714jun7Lc9O70S_H6IFRBibiE3NyPd7rhpYYTcCz1Fzp0PFwj58PZkCGo2dXAZWOBhE9H3PdQkEqcl9Q3zyeUcyAj1mwxjRe8PufvQ8zgyJZ-tHDlFl_LCMvYWFVhCyr745zrDZxdlg8HAJSDUG5XGDXlq935UrhGZIH-ip0CzEIwJjVbf9bIfq1UTmWAYjepJbyP9rUoSxOEv-eTDzxbbVre8UtjkZQUlXXL146oDdi8CWkfL41vY7WUNBgYdYn-vxDO6W1BFHHtuulgz-towh6uMDiTefFOWcAMDQT9uusQJfunGVD33oiNMtN7Z07dB7NkRAf4vrnE0NzO5CrzwDTm9NSQsUZN91fx7VKuNkAPsGWS_osmlxr-xxqFytoOnCM5J_S6NDUIf34pA6s54YNn3-6xQxRhjNTFI_2k0Sj5Me3UQJAKo0x1exxiR_ZlzSJg8a_tEV1DlsFsiN2EunBh4IXiBc9sV6zmu7Zm93Ghza5zLe--TBaRMdwkth7pjSt7AoY0vC7nRHI4WXOx1BRn4a5dOShvQg2EMb1TWaWqWRKKuVNEU8DlCTVEyKdM-QPdK0bWLel9ufO5DxkFTuMkxFTnwk2ICWY9lkCnKbhUh5ur4&sig=Cg0ArKJSzLscPljRvRFW&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://bioderma.naosindia.in/products/sensibio-gel-moussant%3Futm_source%3Ddv360%26utm_medium%3Dpaid%26utm_campaign%3Din_bio_dv360_all_always-on_sensibio_na_awareness_sensibio-h2op1-display%26utm_content%3Dnative_local_sensibio-h2o_inmarket-custom-intent%26dclid%3D%25edclid!%26gad_source%3D7%26gad_campaignid%3D23610931343
+            - img "Advertisement" [ref=f5e5]
+          - generic [ref=f5e6]:
+            - generic:
+              - img [ref=f5e10] [cursor=pointer]
+              - button [ref=f5e12] [cursor=pointer]:
+                - img [ref=f5e13]
+  - contentinfo [ref=e155]:
+    - generic [ref=e156]: © 2013-2026 TOOLSQA.COM | ALL RIGHTS RESERVED.
+```

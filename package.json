@@ -1,0 +1,28 @@
+{
+  "name": "playwright-automation",
+  "version": "1.0.0",
+  "description": "Playwright Hybrid UI+API Tests",
+  "license": "ISC",
+  "author": "Utkarsh Sharma",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node -e \"const fs=require('fs'); const f='results/results.txt'; if(fs.existsSync(f)) fs.unlinkSync(f);\" && npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:api": "npx playwright test --grep @API",
+    "test:ui": "npx playwright test --grep @UI --headed --project=chromium",
+    "test:ui-mode": "npx playwright test --ui",
+    "test:debug": "npx playwright test --debug",
+    "report": "npx playwright show-report reports/html",
+    "report:allure": "allure generate reports/allure-results --clean -o reports/allure-report && allure open reports/allure-report",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-playwright": "^1.6.2",
+    "allure-commandline": "^2.38.1",
+    "allure-playwright": "^3.6.0"
+  }
+}

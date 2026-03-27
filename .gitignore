@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Playwright output
+test-results/
+playwright-report/
+allure-results/
+
+# Reports (generated on each run)
+reports/html/
+reports/junit/
+reports/allure-results/
+reports/allure-report/
+
+# Test artifacts
+results/results.txt
+
+# Environment
+.env
+
+# OS
+.DS_Store
+Thumbs.db

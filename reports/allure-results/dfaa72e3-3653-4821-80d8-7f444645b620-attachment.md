@@ -1,0 +1,99 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link [ref=e4] [cursor=pointer]:
+      - /url: https://demoqa.com
+      - img [ref=e5]
+  - generic [ref=e8]:
+    - generic [ref=e11]:
+      - generic [ref=e14] [cursor=pointer]:
+        - generic [ref=e15]:
+          - img [ref=e17]
+          - text: Elements
+        - img [ref=e22]
+      - generic [ref=e26] [cursor=pointer]:
+        - generic [ref=e27]:
+          - img [ref=e29]
+          - text: Forms
+        - img [ref=e35]
+      - generic [ref=e39] [cursor=pointer]:
+        - generic [ref=e40]:
+          - img [ref=e42]
+          - text: Alerts, Frame & Windows
+        - img [ref=e47]
+      - generic [ref=e51] [cursor=pointer]:
+        - generic [ref=e52]:
+          - img [ref=e54]
+          - text: Widgets
+        - img [ref=e60]
+      - generic [ref=e64] [cursor=pointer]:
+        - generic [ref=e65]:
+          - img [ref=e67]
+          - text: Interactions
+        - img [ref=e72]
+      - generic [ref=e74]:
+        - generic [ref=e76] [cursor=pointer]:
+          - generic [ref=e77]:
+            - img [ref=e79]
+            - text: Book Store Application
+          - img [ref=e84]
+        - list [ref=e87]:
+          - listitem [ref=e88] [cursor=pointer]:
+            - link "Login" [ref=e89]:
+              - /url: /login
+              - img [ref=e90]
+              - text: Login
+          - listitem [ref=e92] [cursor=pointer]:
+            - link "Book Store" [ref=e93]:
+              - /url: /books
+              - img [ref=e94]
+              - text: Book Store
+          - listitem [ref=e96] [cursor=pointer]:
+            - link "Profile" [ref=e97]:
+              - /url: /profile
+              - img [ref=e98]
+              - text: Profile
+          - listitem [ref=e100] [cursor=pointer]:
+            - link "Book Store API" [ref=e101]:
+              - /url: /swagger
+              - img [ref=e102]
+              - text: Book Store API
+    - generic [ref=e105]:
+      - generic [ref=e106]:
+        - generic [ref=e108]: "Books :"
+        - generic [ref=e109]:
+          - generic [ref=e110]: "User Name :"
+          - generic [ref=e111]: testuser_qa01
+          - button "Logout" [ref=e112] [cursor=pointer]
+        - generic [ref=e114]:
+          - textbox "Type to search" [ref=e115]
+          - button [ref=e116] [cursor=pointer]:
+            - img [ref=e117]
+      - generic [ref=e119]:
+        - table [ref=e120]:
+          - rowgroup [ref=e121]:
+            - row "Image Title Author Publisher Action" [ref=e122]:
+              - columnheader "Image" [ref=e123]:
+                - generic [ref=e124]: Image
+              - columnheader "Title" [ref=e125] [cursor=pointer]:
+                - generic [ref=e126]: Title
+              - columnheader "Author" [ref=e127] [cursor=pointer]:
+                - generic [ref=e128]: Author
+              - columnheader "Publisher" [ref=e129] [cursor=pointer]:
+                - generic [ref=e130]: Publisher
+              - columnheader "Action" [ref=e131]:
+                - generic [ref=e132]: Action
+          - rowgroup
+        - generic [ref=e134]:
+          - button "Previous" [disabled]
+          - generic [ref=e135]: Page 1 of 0
+          - button "Next" [disabled]
+      - generic [ref=e136]:
+        - button "Go To Book Store" [ref=e138] [cursor=pointer]
+        - button "Delete Account" [ref=e140] [cursor=pointer]
+        - button "Delete All Books" [ref=e142] [cursor=pointer]
+  - contentinfo [ref=e149]:
+    - generic [ref=e150]: © 2013-2026 TOOLSQA.COM | ALL RIGHTS RESERVED.
+```
